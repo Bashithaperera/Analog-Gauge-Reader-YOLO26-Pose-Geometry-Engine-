@@ -46,3 +46,7 @@ Press 'q' at any point on the keyboard to exit the active visualization video st
 
 The processed frame results containing vector tracking overlays and digital readouts will be compiled and automatically saved to:
 final/final_gauge_output.mp4
+
+<img width="640" height="640" alt="dynamic_result_1" src="https://github.com/user-attachments/assets/ffa3d9f6-27a5-41d1-9f83-e876f32c4976" />
+
+
