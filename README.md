@@ -20,14 +20,6 @@ Install the required Python packages using pip:
 ```bash
 pip install ultralytics opencv-python numpy torch
 ```
-Directory Structure
-To run the pipeline out of the box, organize your project files as follows:
-
-Plaintext
-├── final/                      # Auto-generated output directory
-├── best.pt                     # Custom trained YOLO26-Pose weights
-├── gauge_reader.py             # Main production Python file
-└── inference.mp4               # Input test video
 How to Run
 Open gauge_reader.py and verify the execution configuration parameters at the bottom of the script match your target gauge bounds:
 
