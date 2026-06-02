@@ -24,8 +24,8 @@ Note: Open gauge_reader.py and verify the execution configuration parameters at 
 
 To run the pipeline out of the box, organize your project files as follows:
 
-final/                      # Auto-generated output directory
-best.pt                     # Custom trained YOLO26-Pose weights
-gauge_reader.py             # Main production Python file
-inference.mp4               # Input test video
+* final/                      # Auto-generated output directory
+* best.pt                     # Custom trained YOLO26-Pose weights
+* gauge_reader.py             # Main production Python file
+* inference.mp4               # Input test video
 
