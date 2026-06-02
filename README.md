@@ -20,12 +20,31 @@ Install the required Python packages using pip:
 ```bash
 pip install ultralytics opencv-python numpy torch
 ```
-Note: Open gauge_reader.py and verify the execution configuration parameters at the bottom of the script match your target gauge bounds (minimum and maximum marker values)
-
+Directory Structure
 To run the pipeline out of the box, organize your project files as follows:
 
-* final/                      # Auto-generated output directory
-* best.pt                     # Custom trained YOLO26-Pose weights
-* gauge_reader.py             # Main production Python file
-* inference.mp4               # Input test video
+Plaintext
+├── final/                      # Auto-generated output directory
+├── best.pt                     # Custom trained YOLO26-Pose weights
+├── gauge_reader.py             # Main production Python file
+└── inference.mp4               # Input test video
+How to Run
+Open gauge_reader.py and verify the execution configuration parameters at the bottom of the script match your target gauge bounds:
 
+Python
+if __name__ == "__main__":
+    MODEL_WEIGHTS = "best.pt"
+    INPUT_VIDEO   = "inference.mp4"
+    
+    # Configure your gauge scale limits here
+    DIAL_MIN_VALUE = 0.0
+    DIAL_MAX_VALUE = 10.0
+Run the pipeline script from your terminal:
+
+Bash
+python gauge_reader.py
+Press 'q' at any point on the keyboard to exit the active visualization video stream early.
+
+Output
+The processed frame results containing vector tracking overlays and digital readouts will be compiled and automatically saved to:
+final/final_gauge_output.mp4
