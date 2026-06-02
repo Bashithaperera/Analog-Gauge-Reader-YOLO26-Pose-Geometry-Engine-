@@ -19,3 +19,5 @@ Install the required Python packages using pip:
 
 ```bash
 pip install ultralytics opencv-python numpy torch
+```
+Note: Open gauge_reader.py and verify the execution configuration parameters at the bottom of the script match your target gauge bounds
